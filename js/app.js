@@ -3,10 +3,8 @@
 
   // Configuración del organizador.
   // WHATSAPP: tu número en formato internacional, sin "+", espacios ni guiones.
-  // Ejemplo para Chile: "56912345678". Si lo dejas vacío, el botón abre
-  // WhatsApp con el mensaje listo para elegir a quién enviarlo.
   const CONFIG = {
-    WHATSAPP: ""
+    WHATSAPP: "543515957014"
   };
 
   const TOTAL = 3000;
@@ -149,7 +147,7 @@
       return a - b;
     });
     return [
-      "Hola, quiero participar en la rifa para Australia.",
+      "Hola, quiero participar en la Gran rifa",
       "",
       "Nombre: " + el.fNombre.value.trim(),
       "Teléfono: " + el.fTelefono.value.trim(),

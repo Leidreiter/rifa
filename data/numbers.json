@@ -8,7 +8,7 @@
     "precioMaxPorPersona": 30000
   },
   "numeros": {
-    "1": null,
+    "1": { "nombre": "Martin Leidreiter", "telefono": "+54 351 5957014" },
     "2": null,
     "3": null,
     "4": null,
