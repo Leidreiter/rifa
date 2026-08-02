@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rifa · Viaje a Australia — 3000 números, 6 premios</title>
+  <meta name="description" content="Rifa solidaria de 3000 números para pagar un viaje de estudio y trabajo a Australia. 6 premios, 6 ganadores, sorteo en vivo. Cada número cuesta $3.000.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E4002B'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio">RIFA<span class="brand__dot">·</span>AUSTRALIA</a>
+      <div class="topbar__right">
+        <span class="folio">N° <span id="folioTopo">0</span>/3000 vendidos</span>
+        <a class="btn btn--red" href="#elige">Elige tu número</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="kicker">Rifa solidaria · 6 premios · 6 ganadores</p>
+          <h1>Un número para llegar a <span class="accent">Australia</span>.</h1>
+          <p class="lead">Vendo 3000 números para pagar mi viaje de estudio y trabajo a Australia. Cada número cuesta <strong>$3.000</strong> y participa por los 6 premios. Sorteo en vivo y rifa justa.</p>
+          <div class="hero__cta">
+            <a class="btn btn--red btn--lg" href="#elige">Elige tu número</a>
+            <a class="btn btn--line btn--lg" href="#premios">Ver los premios</a>
+          </div>
+          <ul class="hero__trust">
+            <li>6 premios</li>
+            <li>6 ganadores</li>
+            <li>Sorteo en vivo</li>
+            <li>Hasta 10 números por persona</li>
+          </ul>
+        </div>
+
+        <aside class="hero__counter">
+          <p class="counter__num"><span id="heroVendidos">0</span><span class="counter__slash">/</span>3000</p>
+          <p class="counter__label">números vendidos</p>
+          <div class="progress">
+            <div class="progress__fill" id="progressFill"></div>
+          </div>
+          <p class="counter__note">Quedan <strong id="heroDisponibles">3000</strong> números disponibles.</p>
+          <p class="counter__date">Fecha del sorteo: cuando se completen los 3000 números.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat"><span class="stat__num">3000</span><span class="stat__label">números en total</span></div>
+        <div class="stat"><span class="stat__num">6</span><span class="stat__label">premios y ganadores</span></div>
+        <div class="stat"><span class="stat__num">$3.000</span><span class="stat__label">por número</span></div>
+        <div class="stat"><span class="stat__num">10</span><span class="stat__label">máximo por persona</span></div>
+      </div>
+    </section>
+
+    <section class="premios" id="premios">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">01 · Los premios</p>
+          <h2>Seis premios, seis ganadores.</h2>
+          <p class="section__note">Todos los premios están usados pero como nuevos, en excelente estado, y con su caja original.</p>
+        </header>
+
+        <div class="premios__grid">
+          <article class="card card--top">
+            <div class="card__media">
+              <span class="card__folio">1</span>
+              <img src="assets/img/premio-ipad.jpg" alt="iPad de novena generación" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">1er premio</p>
+              <h3>iPad 9ª generación</h3>
+              <p>iPad de novena generación. Incluye soporte de metal para iPad.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="card__folio">2</span>
+              <img src="assets/img/premio-soundbar.png" alt="Barra de sonido Thonet & Vander" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">2do premio</p>
+              <h3>Barra de sonido Thonet &amp; Vander</h3>
+              <p>Barra de sonido Thonet &amp; Vander.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="card__folio">3</span>
+              <img src="assets/img/premio-echo-dot.jpg" alt="Altavoz inteligente Amazon Echo Dot" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">3er premio</p>
+              <h3>Amazon Echo Dot</h3>
+              <p>Altavoz inteligente Amazon Echo Dot.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="card__folio">4</span>
+              <img src="assets/img/premio-stream-deck.jpg" alt="Panel Stream Deck de Elgato" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">4to premio</p>
+              <h3>Stream Deck de Elgato</h3>
+              <p>Panel de atajos Stream Deck de Elgato.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="card__folio">5</span>
+              <img src="assets/img/premio-microfono.png" alt="Micrófono Wave de Elgato" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">5to premio</p>
+              <h3>Micrófono Wave de Elgato</h3>
+              <p>Micrófono USB Wave de Elgato para streaming.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="card__folio">6</span>
+              <img src="assets/img/premio-inzone.png" alt="Auriculares Sony InZone H3" loading="lazy">
+            </div>
+            <div class="card__body">
+              <p class="card__rank">6to premio</p>
+              <h3>Auriculares Sony InZone H3</h3>
+              <p>Auriculares Sony InZone H3. Incluye soporte y hub USB Satechi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pasos" id="como">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">02 · Cómo participar</p>
+          <h2>Cuatro pasos y estás dentro.</h2>
+        </header>
+
+        <ol class="pasos__list">
+          <li class="paso">
+            <span class="paso__num">01</span>
+            <div class="paso__body">
+              <h3>Elige tus números</h3>
+              <p>Elige hasta 10 números del 1 al 3000 en el formulario.</p>
+            </div>
+          </li>
+          <li class="paso">
+            <span class="paso__num">02</span>
+            <div class="paso__body">
+              <h3>Completa el formulario</h3>
+              <p>Con tu nombre y teléfono, para coordinar el pago y avisarte si ganas.</p>
+            </div>
+          </li>
+          <li class="paso">
+            <span class="paso__num">03</span>
+            <div class="paso__body">
+              <h3>Paga tus números</h3>
+              <p>Cada número cuesta $3.000. El pago se coordina con el organizador.</p>
+            </div>
+          </li>
+          <li class="paso">
+            <span class="paso__num">04</span>
+            <div class="paso__body">
+              <h3>Mira el sorteo en vivo</h3>
+              <p>Cuando se completen los 3000 números, se avisa la fecha y hora del sorteo.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reglas" id="reglas">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">03 · Reglas</p>
+          <h2>Una rifa justa.</h2>
+        </header>
+
+        <div class="reglas__grid">
+          <div class="regla"><span class="regla__num">01</span><p>Hay 3000 números en total. Cada número cuesta $3.000.</p></div>
+          <div class="regla"><span class="regla__num">02</span><p>Máximo 10 números por persona: todos merecen ganar.</p></div>
+          <div class="regla"><span class="regla__num">03</span><p>Familiares y amigos del organizador no participan de la rifa.</p></div>
+          <div class="regla"><span class="regla__num">04</span><p>El sorteo se transmite en vivo. Se avisa la fecha y hora a todos los participantes.</p></div>
+          <div class="regla"><span class="regla__num">05</span><p>Se sortean 6 números, uno por premio. A los ganadores se les notifica directo.</p></div>
+          <div class="regla"><span class="regla__num">06</span><p>Los premios son usados, en excelente estado y con su caja original.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="live" id="live">
+      <div class="container live__grid">
+        <div class="live__badge"><span class="live__dot"></span>EN VIVO</div>
+        <div class="live__body">
+          <h2>El sorteo se transmite en vivo.</h2>
+          <p>La fecha del sorteo es cuando se vendan todos los números disponibles, es decir, los 3000. Ese día se avisa la hora y el enlace de la transmisión a todos los participantes, y se contacta a los 6 ganadores para entregar cada premio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="elige" id="elige">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">04 · Tu número</p>
+          <h2>Elige tus números.</h2>
+          <p class="section__note" id="eligeNote">Quedan <strong id="eligeDisponibles">3000</strong> de 3000 números disponibles.</p>
+        </header>
+
+        <div class="elige__grid">
+          <form class="form" id="rifaForm" novalidate>
+            <div class="form__field">
+              <label for="fNumero">Agrega un número (1–3000)</label>
+              <div class="form__row">
+                <input type="number" id="fNumero" inputmode="numeric" min="1" max="3000" placeholder="Ej: 1234" autocomplete="off">
+                <button type="button" class="btn btn--line" id="btnAgregar">Agregar</button>
+                <button type="button" class="btn btn--ghost" id="btnAzar">Al azar</button>
+              </div>
+              <p class="form__hint">Máximo 10 números por persona. Los números ya vendidos no se pueden elegir.</p>
+              <p class="form__error" id="numError" role="alert"></p>
+            </div>
+
+            <ul class="chips" id="chips"></ul>
+
+            <div class="form__field">
+              <label for="fNombre">Nombre completo</label>
+              <input type="text" id="fNombre" placeholder="Tu nombre" autocomplete="name">
+            </div>
+
+            <div class="form__field">
+              <label for="fTelefono">Teléfono</label>
+              <input type="tel" id="fTelefono" placeholder="+56 9 ..." autocomplete="tel">
+              <p class="form__hint">Para coordinar el pago y avisarte si ganas.</p>
+            </div>
+
+            <div class="form__resumen" id="resumen">
+              <span class="resumen__nums">Ningún número elegido</span>
+              <span class="resumen__total">Total: $0</span>
+            </div>
+
+            <button type="submit" class="btn btn--red btn--lg btn--block" id="btnEnviar">Enviar mi solicitud</button>
+
+            <div class="form__ok" id="resultado" hidden>
+              <p class="form__ok-title">Tu solicitud está lista.</p>
+              <p class="form__ok-text">Revisa el mensaje y envíalo por WhatsApp. El organizador confirmará tus números y coordinará el pago.</p>
+              <pre class="form__ok-msg" id="msgFinal"></pre>
+              <div class="form__ok-actions">
+                <a class="btn btn--red" id="waLink" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+                <button type="button" class="btn btn--line" id="btnCopiar">Copiar mensaje</button>
+              </div>
+            </div>
+          </form>
+
+          <aside class="elige__side">
+            <div class="side__panel">
+              <p class="side__title">Antes de enviar</p>
+              <ol class="side__list">
+                <li>Elige tus números (hasta 10).</li>
+                <li>Escribe tu nombre y teléfono.</li>
+                <li>Envía la solicitud por WhatsApp.</li>
+                <li>El organizador confirma y coordina el pago: $3.000 por número.</li>
+              </ol>
+            </div>
+            <p class="side__note">Tus datos se usan solo para la rifa: coordinar el pago y avisarte si ganas.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">RIFA<span class="brand__dot">·</span>AUSTRALIA</p>
+        <p class="footer__goal">Una rifa para pagar el viaje de estudio y trabajo a Australia.</p>
+      </div>
+      <div class="footer__meta">
+        <p>3000 números · $3.000 c/u · 6 premios · Sorteo en vivo</p>
+        <p class="footer__small">Rifa justa: familiares y amigos del organizador no participan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">Esta página necesita JavaScript para elegir números y enviar tu solicitud.</div>
+  </noscript>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
