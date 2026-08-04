@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leidreiter.github.io/rifa/sitemap.xml

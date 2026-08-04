@@ -3,9 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rifa · Viaje a Australia — 3000 números, 6 premios</title>
-  <meta name="description" content="Rifa solidaria de 3000 números para pagar un viaje de estudio y trabajo a Australia. 6 premios, 6 ganadores, sorteo en vivo. Cada número cuesta $3.000.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E4002B'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial,sans-serif' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E">
+
+  <!-- SEO -->
+  <title>Rifa · Viaje a Australia | 3000 números · 6 premios · Sorteo en vivo</title>
+  <meta name="description" content="Rifa solidaria para financiar un viaje de estudio y trabajo a Australia. 3000 números a $3.000 cada uno, 6 premios (iPad 9ª gen, barra de sonido Thonet & Vander, Echo Dot, Stream Deck, micrófono Wave, Sony InZone H3) y 6 ganadores. Sorteo en vivo, máximo 10 números por persona.">
+  <meta name="author" content="Rifa · Viaje a Australia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://leidreiter.github.io/rifa/">
+  <meta name="theme-color" content="#06132b">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rifa · Viaje a Australia">
+  <meta property="og:title" content="Rifa · Viaje a Australia | 3000 números · 6 premios">
+  <meta property="og:description" content="Rifa solidaria para financiar un viaje de estudio y trabajo a Australia. 3000 números a $3.000 cada uno, 6 premios y 6 ganadores. Sorteo en vivo, máximo 10 números por persona.">
+  <meta property="og:url" content="https://leidreiter.github.io/rifa/">
+  <meta property="og:image" content="https://leidreiter.github.io/rifa/preview.png">
+  <meta property="og:image:width" content="1570">
+  <meta property="og:image:height" content="1002">
+  <meta property="og:image:alt" content="Rifa solidaria para el viaje de estudio y trabajo a Australia: 6 premios, 3000 números y sorteo en vivo">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rifa · Viaje a Australia | 3000 números · 6 premios">
+  <meta name="twitter:description" content="Rifa solidaria para financiar un viaje de estudio y trabajo a Australia. 3000 números a $3.000 cada uno, 6 premios y 6 ganadores. Sorteo en vivo.">
+  <meta name="twitter:image" content="https://leidreiter.github.io/rifa/preview.png">
+  <meta name="twitter:image:alt" content="Rifa solidaria para el viaje de estudio y trabajo a Australia: 6 premios, 3000 números y sorteo en vivo">
+
+  <!-- Datos estructurados (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Rifa · Viaje a Australia",
+        "url": "https://leidreiter.github.io/rifa/",
+        "inLanguage": "es",
+        "description": "Rifa solidaria de 3000 números para financiar un viaje de estudio y trabajo a Australia. 6 premios, 6 ganadores y sorteo en vivo."
+      },
+      {
+        "@type": "Organization",
+        "name": "Rifa · Viaje a Australia",
+        "url": "https://leidreiter.github.io/rifa/",
+        "image": "https://leidreiter.github.io/rifa/preview.png"
+      },
+      {
+        "@type": "Product",
+        "name": "Número de rifa · Viaje a Australia",
+        "description": "Número de la rifa (del 1 al 3000) que participa por los 6 premios. Cada número cuesta $3.000 y la compra máxima es de 10 números por persona. Sorteo en vivo al completarse los 3000 números.",
+        "image": "https://leidreiter.github.io/rifa/preview.png",
+        "brand": {
+          "@type": "Brand",
+          "name": "Rifa · Viaje a Australia"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "3000",
+          "priceCurrency": "CLP",
+          "availability": "https://schema.org/InStock",
+          "url": "https://leidreiter.github.io/rifa/"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -76,7 +143,7 @@
           <article class="card card--top">
             <div class="card__media">
               <span class="card__folio">1</span>
-              <img src="assets/img/premio-ipad.jpg" alt="iPad de novena generación" loading="lazy">
+              <img src="assets/img/premio-ipad.jpg" alt="iPad de novena generación, primer premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">1er premio</p>
@@ -88,7 +155,7 @@
           <article class="card">
             <div class="card__media">
               <span class="card__folio">2</span>
-              <img src="assets/img/premio-soundbar.png" alt="Barra de sonido Thonet & Vander" loading="lazy">
+              <img src="assets/img/premio-soundbar.png" alt="Barra de sonido Thonet & Vander, segundo premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">2do premio</p>
@@ -100,7 +167,7 @@
           <article class="card">
             <div class="card__media">
               <span class="card__folio">3</span>
-              <img src="assets/img/premio-echo-dot.jpg" alt="Altavoz inteligente Amazon Echo Dot" loading="lazy">
+              <img src="assets/img/premio-echo-dot.jpg" alt="Altavoz inteligente Amazon Echo Dot, tercer premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">3er premio</p>
@@ -112,7 +179,7 @@
           <article class="card">
             <div class="card__media">
               <span class="card__folio">4</span>
-              <img src="assets/img/premio-stream-deck.jpg" alt="Panel Stream Deck de Elgato" loading="lazy">
+              <img src="assets/img/premio-stream-deck.jpg" alt="Panel Stream Deck de Elgato, cuarto premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">4to premio</p>
@@ -124,7 +191,7 @@
           <article class="card">
             <div class="card__media">
               <span class="card__folio">5</span>
-              <img src="assets/img/premio-microfono.png" alt="Micrófono Wave de Elgato" loading="lazy">
+              <img src="assets/img/premio-microfono.png" alt="Micrófono Wave de Elgato, quinto premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">5to premio</p>
@@ -136,7 +203,7 @@
           <article class="card">
             <div class="card__media">
               <span class="card__folio">6</span>
-              <img src="assets/img/premio-inzone.png" alt="Auriculares Sony InZone H3" loading="lazy">
+              <img src="assets/img/premio-inzone.png" alt="Auriculares Sony InZone H3 con hub USB Satechi, sexto premio de la rifa" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
               <p class="card__rank">6to premio</p>
@@ -279,7 +346,7 @@
               </ol>
             </div>
             <p class="side__note">Tus datos se usan solo para la rifa: coordinar el pago y avisarte si ganas.</p>
-            <img class="side__img" src="assets/img/rifa.png" alt="Flyer de la rifa para Australia" loading="lazy">
+            <img class="side__img" src="assets/img/rifa.png" alt="Flyer de la rifa solidaria para el viaje de estudio y trabajo a Australia" loading="lazy" decoding="async">
           </aside>
         </div>
       </div>
