@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://leidreiter.github.io/rifa/sitemap.xml
+Sitemap: https://rifa.soymarcus.dev/sitemap.xml
