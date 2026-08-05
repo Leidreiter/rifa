@@ -26,8 +26,6 @@
     btnAzar: $("#btnAzar"),
     numError: $("#numError"),
     chips: $("#chips"),
-    fNombre: $("#fNombre"),
-    fTelefono: $("#fTelefono"),
     resumenNums: $("#resumen .resumen__nums"),
     resumenTotal: $("#resumen .resumen__total"),
     form: $("#rifaForm"),
@@ -149,8 +147,6 @@
     return [
       "Hola, quiero participar en la Gran rifa",
       "",
-      "Nombre: " + el.fNombre.value.trim(),
-      "Teléfono: " + el.fTelefono.value.trim(),
       "Números elegidos: " + lista.join(", "),
       "Cantidad: " + elegidos.length + (elegidos.length === 1 ? " número" : " números"),
       "Total a pagar: " + fmtCLP.format(elegidos.length * PRECIO)
@@ -258,24 +254,7 @@
       el.fNumero.focus();
       return;
     }
-    if (!el.fNombre.value.trim()) {
-      el.fNombre.focus();
-      el.fNombre.style.borderColor = "var(--red)";
-      return;
-    }
-    if (!el.fTelefono.value.trim()) {
-      el.fTelefono.focus();
-      el.fTelefono.style.borderColor = "var(--red)";
-      return;
-    }
     mostrarResultado();
-  });
-
-  el.fNombre.addEventListener("input", function () {
-    el.fNombre.style.borderColor = "";
-  });
-  el.fTelefono.addEventListener("input", function () {
-    el.fTelefono.style.borderColor = "";
   });
 
   el.btnCopiar.addEventListener("click", copiarMensaje);
