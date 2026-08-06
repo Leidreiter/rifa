@@ -31,8 +31,7 @@
     form: $("#rifaForm"),
     resultado: $("#resultado"),
     msgFinal: $("#msgFinal"),
-    waLink: $("#waLink"),
-    btnCopiar: $("#btnCopiar")
+    waLink: $("#waLink")
   };
 
   const fmtCLP = new Intl.NumberFormat("es-CL", {
@@ -165,40 +164,6 @@
     el.resultado.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  function copiarMensaje() {
-    const msg = el.msgFinal.textContent;
-    const done = function () {
-      const original = el.btnCopiar.textContent;
-      el.btnCopiar.textContent = "Copiado";
-      setTimeout(function () {
-        el.btnCopiar.textContent = original;
-      }, 2000);
-    };
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(msg).then(done, function () {
-        copiarFallback(msg, done);
-      });
-    } else {
-      copiarFallback(msg, done);
-    }
-  }
-
-  function copiarFallback(texto, done) {
-    const ta = document.createElement("textarea");
-    ta.value = texto;
-    ta.style.position = "fixed";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand("copy");
-    } catch (e) {
-      /* noop */
-    }
-    document.body.removeChild(ta);
-    done();
-  }
-
   function cargarDatos() {
     return fetch(JSON_URL)
       .then(function (r) {
@@ -256,8 +221,6 @@
     }
     mostrarResultado();
   });
-
-  el.btnCopiar.addEventListener("click", copiarMensaje);
 
   cargarDatos();
 })();
